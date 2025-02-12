@@ -1,1 +1,1 @@
-# studentManagement
+The **Student Management System** using **JSP, Servlets, JDBC, and MySQL** follows the **MVC architecture** for efficient data handling. It enables **Create, Read, Update, and Delete (CRUD)** operations for student records. The **JSP** handles the view, **Servlets** manage requests, and **JDBC** connects to the **MySQL** database.
