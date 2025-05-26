@@ -1,4 +1,6 @@
-<%@ page import="java.util.List, model.Attendance" %>
+<%@page import="java.util.List"%>
+<%@ page import="com.example.model.Attendance" %>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
@@ -58,10 +60,11 @@
                 </tr>
             </thead>
             <tbody>
-                <% 
-                    List<Attendance> attendanceList = (List<Attendance>) request.getAttribute("attendanceList");
-                    if (attendanceList != null) {
-                        for (Attendance a : attendanceList) { 
+                <%
+                List<com.example.model.Attendance> attendanceList = (List<com.example.model.Attendance>) request.getAttribute("attendanceList");
+                                if (attendanceList != null && !attendanceList.isEmpty()) 
+                                	{
+                                        for (com.example.model.Attendance a : attendanceList) {
                 %>
                 <tr>
                     <td><%= a.getStudentId() %></td>  
@@ -69,8 +72,8 @@
                     <td><%= a.getStatus() %></td>
                 </tr>
                 <% 
-                        }
-                    } else { 
+                        }}
+                     else { 
                 %>
                 <tr>
                     <td colspan="3" class="text-center">No records found</td>
@@ -86,9 +89,7 @@
         </div>
     </div>
     
-    <!-- Footer -->
-    <div class="footer">&copy; 2025 Attendance Management System. All Rights Reserved.</div>
-    
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-<%@ page language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <html>
 <head>
     <title>Admin Login</title>
@@ -59,9 +60,9 @@
         </form>
     </div>
     
-    <!-- Footer -->
-    <div class="footer">&copy; 2025 Attendance Management System. All Rights Reserved.</div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
 </body>
 </html>

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="#">Attendance System</a>
     <div class="collapse navbar-collapse">
